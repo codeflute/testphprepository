@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        include_once 'HelloWorld/index.php';
+        include_once 'SimpleJsonWebService/SimpleJsonWebService.php';
         ?>
     </body>
 </html>
