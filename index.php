@@ -10,8 +10,6 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-        include_once 'SimpleJsonWebService/SimpleJsonWebService.php';
-        ?>
+        <a href="SimpleJsonWebService/SimpleJsonWebService.php"> Simple Json Web Service</a>
     </body>
 </html>
