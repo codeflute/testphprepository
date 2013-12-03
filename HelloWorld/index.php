@@ -6,6 +6,6 @@
  * and open the template in the editor.
  */
 
-echo 'Hello World from Hello World';
+echo 'Hello World from Hello World script';
 
 ?>
