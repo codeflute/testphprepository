@@ -66,13 +66,19 @@
 		 *
 		 */
 		public function processApi(){  
-			$func = strtolower(trim(str_replace("/","",$_REQUEST['rquest'])));
+//                    print_r($_REQUEST);
+//                    exit();
+			$func = strtolower(trim(str_replace("/","",$_REQUEST['request'])));
+//                        print_r($func);
+//                        exit();
                         if((int)method_exists($this,$func) > 0)
                         {
+//                                print_r("func");
 				$this->$func();
                         }
                         else
                         {
+//                                print_r("no func");
 				$this->response('',404);				// If the method not exist with in this class, response would be "Page not found".
                         }
 		}
@@ -117,7 +123,11 @@
 			if($this->get_request_method() != "GET"){
 				$this->response('',406);
 			}
-			$sql = mysql_query("SELECT user_id, user_fullname, user_email FROM users WHERE user_status = 1", $this->db);
+//                    echo "inside users function";
+//                    exit();
+			$sql = mysql_query("SELECT user_id, user_fullname, user_email FROM users WHERE user_status = 1", $this->db) or die("Cannot execute query");
+//                    echo mysql_num_rows($sql);
+//                    exit();
 			if(mysql_num_rows($sql) > 0){
 				$result = array();
 				while($rlt = mysql_fetch_array($sql,MYSQL_ASSOC)){
