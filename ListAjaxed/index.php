@@ -10,7 +10,6 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <a href="SimpleJsonWebService/SimpleJsonWebService.php">Simple Json Web Service</a>
-        <a href="ListAjaxed/index.php">List Ajaxed</a>
+        <a href="">Test</a>
     </body>
 </html>
