@@ -11,6 +11,6 @@ and open the template in the editor.
     </head>
     <body>
         <a href="SimpleJsonWebService/SimpleJsonWebService.php">Simple Json Web Service</a>
-        <a href="ListAjaxed/index.php">List Ajaxed</a>
+        <a href="ListAjaxed/demo.php">List Ajaxed</a>
     </body>
 </html>
