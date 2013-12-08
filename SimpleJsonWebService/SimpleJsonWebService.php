@@ -16,7 +16,7 @@ if (mysql_num_rows($result)) {
 }
 
 header('Content-type: application/json');
-echo json_encode(array('posts' => $posts));
+echo json_encode(array('post_list' => $posts));
 
 @mysql_close($link);
 ?>
